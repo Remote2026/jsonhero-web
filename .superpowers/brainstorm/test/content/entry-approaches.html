@@ -1,0 +1,124 @@
+<h2>🎯 首页入口改进方案</h2>
+<p class="subtitle">核心目标：让用户一眼就知道"从哪里开始"，降低认知负担</p>
+
+<div class="section">
+  <h3>方案 A：极简单一入口</h3>
+  <p class="subtitle">像 Google 一样，页面只有一个核心操作</p>
+  <div class="mockup" style="max-width:700px; margin:0 auto;">
+    <div class="mockup-header">JSON Hero</div>
+    <div class="mockup-body" style="padding:2rem;text-align:center;">
+      <div style="font-size:1.8rem;font-weight:700;margin-bottom:0.5rem;">Your JSON, beautifully visualized</div>
+      <div style="font-size:0.95rem;color:#999;margin-bottom:1.5rem;">Paste JSON, enter a URL, or drop a file</div>
+      <div style="display:flex;max-width:500px;margin:0 auto;">
+        <input class="mock-input" placeholder="Paste JSON or enter a URL..." style="flex:1;padding:0.8rem 1rem;font-size:1rem;">
+        <button class="mock-button" style="padding:0.8rem 1.5rem;font-size:1rem;">View →</button>
+      </div>
+      <div style="margin-top:1rem;font-size:0.85rem;color:#777;">
+        or <a href="#" style="color:#2c3e8f;">drag & drop a JSON file</a>
+        · <a href="#" style="color:#2c3e8f;">try an example</a>
+      </div>
+    </div>
+  </div>
+  <div class="pros-cons" style="margin-top:0.8rem;">
+    <div class="pros"><h4>Pros</h4><ul><li>零认知负担，用户秒懂操作</li><li>视觉干净，聚焦核心价值</li><li>适合 Landing page 转化</li></ul></div>
+    <div class="cons"><h4>Cons</h4><ul><li>功能入口被折叠，拖拽不够显眼</li><li>与现有"营销型首页"风格差异大</li></ul></div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>方案 B：三步引导式</h3>
+  <p class="subtitle">用步骤可视化告诉用户完整工作流</p>
+  <div class="mockup" style="max-width:700px; margin:0 auto;">
+    <div class="mockup-header">JSON Hero</div>
+    <div class="mockup-body" style="padding:2rem;">
+      <div style="display:flex;justify-content:space-between;margin-bottom:2rem;">
+        <div style="text-align:center;flex:1;">
+          <div style="width:40px;height:40px;border-radius:50%;background:#2c3e8f;color:white;display:flex;align-items:center;justify-content:center;margin:0 auto 0.5rem;font-weight:700;">1</div>
+          <div style="font-weight:600;">Paste or Upload</div>
+          <div style="font-size:0.8rem;color:#999;">Paste JSON, enter a URL,<br>or drag a file</div>
+        </div>
+        <div style="display:flex;align-items:center;font-size:1.5rem;color:#ccc;">→</div>
+        <div style="text-align:center;flex:1;">
+          <div style="width:40px;height:40px;border-radius:50%;background:#2c3e8f;color:white;display:flex;align-items:center;justify-content:center;margin:0 auto 0.5rem;font-weight:700;">2</div>
+          <div style="font-weight:600;">Auto-parsed</div>
+          <div style="font-size:0.8rem;color:#999;">Structure, previews,<br>schema inferred</div>
+        </div>
+        <div style="display:flex;align-items:center;font-size:1.5rem;color:#ccc;">→</div>
+        <div style="text-align:center;flex:1;">
+          <div style="width:40px;height:40px;border-radius:50%;background:#2c3e8f;color:white;display:flex;align-items:center;justify-content:center;margin:0 auto 0.5rem;font-weight:700;">3</div>
+          <div style="font-weight:600;">Explore</div>
+          <div style="font-size:0.8rem;color:#999;">Tree, Column, Editor<br>views + search</div>
+        </div>
+      </div>
+      <div style="display:flex;max-width:500px;margin:0 auto;">
+        <input class="mock-input" placeholder="Paste JSON or enter a URL..." style="flex:1;padding:0.8rem 1rem;font-size:1rem;">
+        <button class="mock-button" style="padding:0.8rem 1.5rem;font-size:1rem;">Go</button>
+      </div>
+      <div style="margin-top:0.8rem;text-align:center;font-size:0.85rem;color:#777;">
+        <a href="#" style="color:#2c3e8f;">Upload a .json file</a> · <a href="#" style="color:#2c3e8f;">Try sample</a>
+      </div>
+    </div>
+  </div>
+  <div class="pros-cons" style="margin-top:0.8rem;">
+    <div class="pros"><h4>Pros</h4><ul><li>展示产品价值（自动解析、多种视图）</li><li>降低"然后呢？"的疑惑</li><li>教育新用户产品能力</li></ul></div>
+    <div class="cons"><h4>Cons</h4><ul><li>视觉稍复杂，信息密度高</li><li>步骤说明可能分散对操作的注意力</li></ul></div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>方案 C：操作 + 实时预览并排</h3>
+  <p class="subtitle">左侧操作，右侧立刻看到预览效果</p>
+  <div class="mockup" style="max-width:750px; margin:0 auto;">
+    <div class="mockup-header">JSON Hero</div>
+    <div class="mockup-body" style="padding:0;display:flex;">
+      <div style="flex:1;padding:1.5rem;border-right:1px solid #e0e0e0;">
+        <div style="font-weight:600;margin-bottom:1rem;">Enter your JSON</div>
+        <input class="mock-input" placeholder="Paste JSON or URL..." style="width:100%;padding:0.6rem;font-size:0.9rem;margin-bottom:0.8rem;">
+        <div style="text-align:center;margin-bottom:0.8rem;color:#999;font-size:0.85rem;">— or —</div>
+        <div class="placeholder" style="padding:1rem;text-align:center;">📁 Drop .json file here</div>
+        <div style="margin-top:0.8rem;font-size:0.85rem;color:#777;text-align:center;">
+          <a href="#" style="color:#2c3e8f;">Try an example →</a>
+        </div>
+      </div>
+      <div style="flex:1.5;padding:1.5rem;">
+        <div style="font-weight:600;margin-bottom:1rem;">Preview</div>
+        <div style="background:#f5f5f5;border-radius:6px;padding:1rem;font-family:monospace;font-size:0.8rem;line-height:1.6;">
+          <div>{<span style="color:#2c3e8f;"> "name"</span>: <span style="color:#c43e2c;">"JSON Hero"</span>,</div>
+          <div>  <span style="color:#2c3e8f;">"features"</span>: [</div>
+          <div>    <span style="color:#c43e2c;">"column view"</span>,</div>
+          <div>    <span style="color:#c43e2c;">"tree view"</span>,</div>
+          <div>    <span style="color:#c43e2c;">"search"</span></div>
+          <div>  ]</div>
+          <div>}</div>
+        </div>
+        <div style="margin-top:0.5rem;font-size:0.75rem;color:#999;">Try pasting your own JSON above →</div>
+      </div>
+    </div>
+  </div>
+  <div class="pros-cons" style="margin-top:0.8rem;">
+    <div class="pros"><h4>Pros</h4><ul><li>即见即得，用户马上看到产品价值</li><li>互动感强，停留时间更长</li><li>展示产品能力的同时引导操作</li></ul></div>
+    <div class="cons"><h4>Cons</h4><ul><li>实现复杂度最高</li><li>移动端适配需要额外处理</li></ul></div>
+  </div>
+</div>
+
+<div class="section" style="text-align:center;padding-top:0.5rem;border-top:1px solid #e0e0e0;">
+  <p class="subtitle">你倾向哪个方向？或者想组合其中几个元素？</p>
+  <div class="options">
+    <div class="option" data-choice="a" onclick="toggleSelect(this)">
+      <div class="letter">A</div>
+      <div class="content"><h3>极简单一入口</h3><p>Google 风格，一个输入框搞定一切</p></div>
+    </div>
+    <div class="option" data-choice="b" onclick="toggleSelect(this)">
+      <div class="letter">B</div>
+      <div class="content"><h3>三步引导式</h3><p>展示工作流，教育用户</p></div>
+    </div>
+    <div class="option" data-choice="c" onclick="toggleSelect(this)">
+      <div class="letter">C</div>
+      <div class="content"><h3>操作+预览并排</h3><p>即见即得，互动感强</p></div>
+    </div>
+    <div class="option" data-choice="hybrid" onclick="toggleSelect(this)">
+      <div class="letter">D</div>
+      <div class="content"><h3>组合方案</h3><p>取以上几种的优点混合</p></div>
+    </div>
+  </div>
+</div>

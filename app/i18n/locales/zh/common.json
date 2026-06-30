@@ -1,0 +1,134 @@
+{
+  "header": {
+    "by": "来自",
+    "new": "添加",
+    "delete": "删除",
+    "deleteConfirm": "此文档将被永久删除，确定要继续吗？",
+    "share": "分享",
+    "saved": "已保存"
+  },
+  "footer": {
+    "navigate": "导航",
+    "history": "历史",
+    "resetPath": "重置路径",
+    "copySelectedNode": "复制选中节点"
+  },
+  "sidebar": {
+    "columnView": "列视图",
+    "jsonView": "JSON 视图",
+    "treeView": "树形视图",
+    "download": "下载"
+  },
+  "newDocument": {
+    "title": "新建文档",
+    "subtitle": "粘贴 JSON 或输入 URL",
+    "inputLabel": "粘贴 JSON 或 URL",
+    "placeholder": "在此粘贴 JSON，或输入 URL…",
+    "opening": "正在打开…",
+    "openJson": "打开 JSON →",
+    "or": "或",
+    "trySample": "试试示例",
+    "keyboardHint": "按 <1>Ctrl+Enter</1> 提交"
+  },
+  "dragDrop": {
+    "dropToOpen": "松开以打开…",
+    "clickToSelect": "拖放 JSON 文件到此处，或点击选择"
+  },
+  "urlForm": {
+    "placeholder": "输入 JSON URL 或在此粘贴 JSON…",
+    "go": "打开"
+  },
+  "sampleUrls": {
+    "tweetJson": "推文 JSON",
+    "githubApi": "Github API",
+    "airtableApi": "Airtable API",
+    "unsplashApi": "Unsplash API"
+  },
+  "noJson": {
+    "tryItOut": "没有 JSON？试试这些示例："
+  },
+  "search": {
+    "searchButton": "搜索…",
+    "placeholder": "搜索 JSON…",
+    "loading": "加载中…",
+    "oneResult": "1 个结果",
+    "nResults": "{{count}} 个结果",
+    "noResults": "未找到 \"{{query}}\" 的相关结果",
+    "toSelect": "选择",
+    "toNavigate": "导航",
+    "toClose": "关闭"
+  },
+  "infoHeader": {
+    "nothingSelected": "未选中任何内容",
+    "null": "空",
+    "canBeNull": "可为空"
+  },
+  "share": {
+    "copy": "复制",
+    "copied": "已复制！",
+    "failedToCopy": "复制失败",
+    "description": "拥有此链接的任何人都可以查看此 JSON 文件。",
+    "includePath": "链接包含路径"
+  },
+  "codeView": {
+    "openInTab": "在新标签页中打开"
+  },
+  "preview": {
+    "preview": "预览",
+    "loading": "加载中…",
+    "audioNotSupported": "抱歉，您的浏览器不支持嵌入式音频。",
+    "videoNotSupported": "抱歉，您的浏览器不支持嵌入式视频。"
+  },
+  "properties": {
+    "properties": "属性",
+    "formattedValue": "格式化值",
+    "type": "类型"
+  },
+  "containerInfo": {
+    "json": "JSON",
+    "schema": "Schema"
+  },
+  "relatedValues": {
+    "title": "相关值"
+  },
+  "documentTitle": {
+    "placeholder": "为 JSON 文件命名",
+    "save": "保存",
+    "reset": "重置"
+  },
+  "pathBar": {
+    "placeholder": "为 JSON 文件命名"
+  },
+  "copyText": {
+    "copy": "复制",
+    "copied": "已复制！"
+  },
+  "indentPreference": {
+    "indent": "缩进"
+  },
+  "githubStar": {
+    "star": "星标"
+  },
+  "mobileWarning": {
+    "title": "JSON Hero 仅支持桌面端",
+    "subtitle": "（暂时）",
+    "backToHome": "返回首页"
+  },
+  "errorPage": {
+    "sorry": "<1>抱歉</1>！出了点问题…",
+    "notFound": "未找到页面 <1>'https://jsonhero.io/j/{{id}}'</1>",
+    "unknownError": "未知错误",
+    "home": "首页"
+  },
+  "sampleDoc": {
+    "title": "示例 API 响应"
+  },
+  "emptyState": {
+    "noDocument": "未打开文档",
+    "openFile": "打开一个 JSON 文件开始使用",
+    "shortcutHint": "按 Ctrl+N 创建新文档"
+  },
+  "infoPanelPlaceholder": {
+    "text": "打开文档后可在右侧查看预览、Schema 和相关值"
+  }
+}

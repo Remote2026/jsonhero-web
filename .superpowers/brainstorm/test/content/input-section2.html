@@ -1,0 +1,66 @@
+<h2>方案 C — 输入区设计</h2>
+<p class="subtitle">Part 2/5: 左侧输入区域细节</p>
+
+<div class="section">
+  <h3>输入区结构</h3>
+  <div class="mockup" style="max-width:450px; margin:0 auto;">
+    <div class="mockup-body" style="padding:2rem;">
+      <div style="font-size:0.75rem;color:#2c3e8f;text-transform:uppercase;letter-spacing:0.1em;font-weight:600;margin-bottom:0.3rem;">JSON Hero</div>
+      <div style="font-size:1.5rem;font-weight:700;line-height:1.3;margin-bottom:0.5rem;">Your JSON,<br>beautifully <span style="color:#2c3e8f;">visualized</span></div>
+      <div style="font-size:0.85rem;color:#999;margin-bottom:1.2rem;">Paste, upload, or enter a URL to get started</div>
+
+      <div style="margin-bottom:0.8rem;">
+        <div style="font-size:0.75rem;font-weight:600;color:#555;margin-bottom:0.3rem;">PASTE JSON OR URL</div>
+        <div class="mock-input" style="display:flex;padding:0;overflow:hidden;border:1px solid #2c3e8f;">
+          <input class="mock-input" placeholder="Paste JSON or enter a URL..." style="flex:1;border:none;padding:0.75rem 1rem;font-size:0.9rem;border-radius:0;">
+          <button class="mock-button" style="border-radius:0;padding:0.75rem 1.2rem;background:#2c3e8f;color:white;border:none;">View →</button>
+        </div>
+      </div>
+
+      <div style="margin-bottom:0.8rem;">
+        <div class="placeholder" style="padding:1rem;text-align:center;cursor:pointer;border:2px dashed #ccc;border-radius:8px;">
+          <div style="font-size:1.2rem;margin-bottom:0.3rem;">📁</div>
+          <div style="font-size:0.85rem;color:#666;">Drop a .json file here, or <span style="color:#2c3e8f;font-weight:600;">click to browse</span></div>
+          <div style="font-size:0.7rem;color:#999;margin-top:0.3rem;">Max 1MB · .json files only</div>
+        </div>
+      </div>
+
+      <div style="font-size:0.8rem;color:#777;">
+        No JSON handy? <a href="#" style="color:#2c3e8f;">Try a sample →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>交互行为</h3>
+  <table style="width:100%;font-size:0.85rem;border-collapse:collapse;">
+    <tr><td style="padding:0.5rem;border-bottom:1px solid #eee;font-weight:600;">输入框</td><td style="padding:0.5rem;border-bottom:1px solid #eee;">支持粘贴 JSON 文本 或 输入 URL，按 Enter 或点击 View 提交</td></tr>
+    <tr><td style="padding:0.5rem;border-bottom:1px solid #eee;font-weight:600;">拖拽区</td><td style="padding:0.5rem;border-bottom:1px solid #eee;">拖入 .json 文件自动上传，拖入时区域高亮反馈</td></tr>
+    <tr><td style="padding:0.5rem;border-bottom:1px solid #eee;font-weight:600;">示例链接</td><td style="padding:0.5rem;border-bottom:1px solid #eee;">点击直接跳转到示例 JSON 视图（保留现有 SampleUrls 逻辑）</td></tr>
+    <tr><td style="padding:0.5rem;border-bottom:1px solid #eee;font-weight:600;">输入框检测</td><td style="padding:0.5rem;border-bottom:1px solid #eee;">自动识别是 URL 还是 JSON 文本，无需用户选择</td></tr>
+    <tr><td style="padding:0.5rem;font-weight:600;">拖拽区优先级</td><td style="padding:0.5rem;">拖拽区保持现有 DragAndDropForm 逻辑，不修改提交行为</td></tr>
+  </table>
+</div>
+
+<div class="section">
+  <h3>与现状的差异</h3>
+  <div class="pros-cons">
+    <div class="pros"><h4>保留</h4><ul><li>UrlForm 的输入逻辑（复用现有 action）</li><li>DragAndDropForm 的上传逻辑</li><li>SampleUrls 的示例链接</li></ul></div>
+    <div class="cons"><h4>改变</h4><ul><li>去掉 Hero 区大标题"JSON sucks"（保留品牌调性 → 改为"Your JSON, beautifully visualized"）</li><li>去掉 Hero 区视频</li><li>URL 输入框变大、更醒目</li><li>拖拽区增加文件大小/格式提示</li></ul></div>
+  </div>
+</div>
+
+<div class="section" style="padding-top:0.5rem;border-top:1px solid #e0e0e0;text-align:center;">
+  <p class="subtitle">输入区设计 OK 吗？</p>
+  <div class="options">
+    <div class="option" data-choice="yes" onclick="toggleSelect(this)">
+      <div class="letter">✓</div>
+      <div class="content"><h3>可以</h3><p>继续下一部分</p></div>
+    </div>
+    <div class="option" data-choice="adjust" onclick="toggleSelect(this)">
+      <div class="letter">~</div>
+      <div class="content"><h3>小调整</h3><p>有些细节要改</p></div>
+    </div>
+  </div>
+</div>

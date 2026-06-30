@@ -1,0 +1,75 @@
+<h2>右侧预览区 — 重新思考</h2>
+<p class="subtitle">Part 3.5: 静态代码 vs 真实查看器体验</p>
+
+<div class="section">
+  <h3>两种方向</h3>
+  <div class="split">
+    <div class="mockup">
+      <div class="mockup-header">方案 A: 静态代码截图</div>
+      <div class="mockup-body" style="padding:1rem;background:#1a1a2e;font-family:monospace;font-size:0.75rem;color:rgba(255,255,255,0.8);min-height:200px;">
+        <div><span style="color:#a78bfa;">{</span></div>
+        <div>  <span style="color:#a78bfa;">"name"</span>: <span style="color:#f59e0b;">"JSON Hero"</span></div>
+        <div><span style="color:#a78bfa;">}</span></div>
+      </div>
+      <div class="pros-cons" style="margin:0;font-size:0.75rem;">
+        <div class="pros" style="padding:0.5rem;"><h4>Pros</h4><ul><li>简单，纯 HTML/CSS</li></ul></div>
+        <div class="cons" style="padding:0.5rem;"><h4>Cons</h4><ul><li>没有真实交互感</li><li>和真正的产品体验脱节</li></ul></div>
+      </div>
+    </div>
+    <div class="mockup">
+      <div class="mockup-header" style="background:#2c3e8f;color:white;">✅ 方案 B: 嵌入真实查看器</div>
+      <div class="mockup-body" style="padding:0.5rem;background:#f8fafc;min-height:200px;display:flex;gap:0.3rem;">
+        <div style="width:30%;background:#e2e8f0;border-radius:4px;padding:0.5rem;">
+          <div style="font-size:0.65rem;color:#64748b;font-weight:600;">DOCUMENT</div>
+          <div style="font-size:0.7rem;margin-top:0.3rem;color:#334155;">📄 sample.json</div>
+          <div style="font-size:0.7rem;margin-top:0.5rem;color:#2c3e8f;font-weight:600;">Views</div>
+          <div style="font-size:0.65rem;color:#475569;">✦ Column</div>
+          <div style="font-size:0.65rem;color:#475569;">🌲 Tree</div>
+          <div style="font-size:0.65rem;color:#475569;">✏️ Editor</div>
+        </div>
+        <div style="flex:1;background:#ffffff;border-radius:4px;padding:0.5rem;font-family:monospace;font-size:0.65rem;line-height:1.6;overflow:hidden;">
+          <div style="display:flex;gap:0.3rem;margin-bottom:0.3rem;">
+            <span style="color:#94a3b8;">$</span><span style="color:#2c3e8f;">.name</span>
+          </div>
+          <div><span style="color:#a78bfa;">{</span></div>
+          <div>  <span style="color:#a78bfa;">"name"</span>: "<span style="color:#f59e0b;">Sample</span>"</div>
+          <div>  <span style="color:#a78bfa;">"items"</span>: [</div>
+          <div>    {<span style="color:#a78bfa;">"id"</span>: 1, <span style="color:#a78bfa;">"val"</span>: "a"},</div>
+          <div>    {<span style="color:#a78bfa;">"id"</span>: 2, <span style="color:#a78bfa;">"val"</span>: "b"}</div>
+          <div>  ]</div>
+          <div><span style="color:#a78bfa;">}</span></div>
+        </div>
+        <div style="width:25%;background:#f1f5f9;border-radius:4px;padding:0.5rem;">
+          <div style="font-size:0.65rem;color:#64748b;font-weight:600;">PREVIEW</div>
+          <div style="font-size:0.7rem;margin-top:0.3rem;padding:0.3rem;background:#ffffff;border-radius:4px;">
+            <div><span style="color:#475569;">Type:</span> Object</div>
+            <div style="color:#2c3e8f;">🖼️ Image URL</div>
+            <div style="color:#8b6914;">📅 2024-01-15</div>
+          </div>
+        </div>
+      </div>
+      <div class="pros-cons" style="margin:0;font-size:0.75rem;">
+        <div class="pros" style="padding:0.5rem;"><h4>Pros</h4><ul><li>真实展示产品能力</li><li>用户一眼知道"用了会怎样"</li></ul></div>
+        <div class="cons" style="padding:0.5rem;"><h4>Cons</h4><ul><li>需要复用现有组件</li><li>实现复杂度中等</li></ul></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="text-align:center;padding-top:0.5rem;border-top:1px solid #e0e0e0;">
+  <p class="subtitle">右侧应该展示什么？</p>
+  <div class="options">
+    <div class="option" data-choice="static" onclick="toggleSelect(this)">
+      <div class="letter">A</div>
+      <div class="content"><h3>静态代码截图</h3><p>简单 CSS 模拟，不需要数据</p></div>
+    </div>
+    <div class="option" data-choice="real" onclick="toggleSelect(this)">
+      <div class="letter">B</div>
+      <div class="content"><h3>嵌入真实查看器</h3><p>复用 SideBar + JsonView + InfoPanel，加载示例数据</p></div>
+    </div>
+    <div class="option" data-choice="hybrid" onclick="toggleSelect(this)">
+      <div class="letter">C</div>
+      <div class="content"><h3>轻量预览</h3><p>仅展示 JSON 列视图的核心外观，不加载完整 provider 树</p></div>
+    </div>
+  </div>
+</div>

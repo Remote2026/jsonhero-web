@@ -1,0 +1,134 @@
+{
+  "header": {
+    "by": "by",
+    "new": "New",
+    "delete": "Delete",
+    "deleteConfirm": "This will permanently delete this document, are you sure you want to continue?",
+    "share": "Share",
+    "saved": "Saved"
+  },
+  "footer": {
+    "navigate": "Navigate",
+    "history": "History",
+    "resetPath": "Reset path",
+    "copySelectedNode": "Copy selected node"
+  },
+  "sidebar": {
+    "columnView": "Column view",
+    "jsonView": "JSON view",
+    "treeView": "Tree view",
+    "download": "Download"
+  },
+  "newDocument": {
+    "title": "New Document",
+    "subtitle": "Paste JSON or enter a URL",
+    "inputLabel": "Paste JSON or URL",
+    "placeholder": "Paste your JSON here, or type a URL…",
+    "opening": "Opening…",
+    "openJson": "Open JSON →",
+    "or": "or",
+    "trySample": "Try a sample",
+    "keyboardHint": "Press <1>Ctrl+Enter</1> to submit"
+  },
+  "dragDrop": {
+    "dropToOpen": "Now drop to open it…",
+    "clickToSelect": "Drop a JSON file here, or click to select"
+  },
+  "urlForm": {
+    "placeholder": "Enter a JSON URL or paste in JSON here…",
+    "go": "Go"
+  },
+  "sampleUrls": {
+    "tweetJson": "Tweet JSON",
+    "githubApi": "Github API",
+    "airtableApi": "Airtable API",
+    "unsplashApi": "Unsplash API"
+  },
+  "noJson": {
+    "tryItOut": "No JSON? Try it out:"
+  },
+  "search": {
+    "searchButton": "Search…",
+    "placeholder": "Search the JSON…",
+    "loading": "Loading…",
+    "oneResult": "1 result",
+    "nResults": "{{count}} results",
+    "noResults": "No results for \"{{query}}\"",
+    "toSelect": "to select",
+    "toNavigate": "to navigate",
+    "toClose": "to close"
+  },
+  "infoHeader": {
+    "nothingSelected": "Nothing selected",
+    "null": "null",
+    "canBeNull": "Can be null"
+  },
+  "share": {
+    "copy": "Copy",
+    "copied": "Copied!",
+    "failedToCopy": "Failed to copy",
+    "description": "Anyone with this link can view this json file.",
+    "includePath": "Link includes path"
+  },
+  "codeView": {
+    "openInTab": "Open in tab"
+  },
+  "preview": {
+    "preview": "Preview",
+    "loading": "Loading…",
+    "audioNotSupported": "Sorry, your browser doesn't support embedded audio.",
+    "videoNotSupported": "Sorry, your browser doesn't support embedded videos."
+  },
+  "properties": {
+    "properties": "Properties",
+    "formattedValue": "Formatted value",
+    "type": "Type"
+  },
+  "containerInfo": {
+    "json": "JSON",
+    "schema": "Schema"
+  },
+  "relatedValues": {
+    "title": "Related values"
+  },
+  "documentTitle": {
+    "placeholder": "Name your JSON file",
+    "save": "Save",
+    "reset": "Reset"
+  },
+  "pathBar": {
+    "placeholder": "Name your JSON file"
+  },
+  "copyText": {
+    "copy": "Copy",
+    "copied": "Copied!"
+  },
+  "indentPreference": {
+    "indent": "Indent"
+  },
+  "githubStar": {
+    "star": "Star"
+  },
+  "mobileWarning": {
+    "title": "JSON Hero only works on desktop",
+    "subtitle": "(For now!)",
+    "backToHome": "Back to Home"
+  },
+  "errorPage": {
+    "sorry": "<1>Sorry</1>! Something went wrong…",
+    "notFound": "We couldn't find the page <1>'https://jsonhero.io/j/{{id}}'</1>",
+    "unknownError": "Unknown error occurred.",
+    "home": "HOME"
+  },
+  "sampleDoc": {
+    "title": "Sample API Response"
+  },
+  "emptyState": {
+    "noDocument": "No document open",
+    "openFile": "Open a JSON file to get started",
+    "shortcutHint": "Press Ctrl+N to create a new document"
+  },
+  "infoPanelPlaceholder": {
+    "text": "Open a document to see previews, schema, and related values"
+  }
+}

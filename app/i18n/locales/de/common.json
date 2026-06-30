@@ -1,0 +1,134 @@
+{
+  "header": {
+    "by": "von",
+    "new": "Neu",
+    "delete": "Löschen",
+    "deleteConfirm": "Dieses Dokument wird endgültig gelöscht. Möchten Sie fortfahren?",
+    "share": "Teilen",
+    "saved": "Gespeichert"
+  },
+  "footer": {
+    "navigate": "Navigieren",
+    "history": "Verlauf",
+    "resetPath": "Pfad zurücksetzen",
+    "copySelectedNode": "Ausgewählten Knoten kopieren"
+  },
+  "sidebar": {
+    "columnView": "Spaltenansicht",
+    "jsonView": "JSON-Ansicht",
+    "treeView": "Baumansicht",
+    "download": "Herunterladen"
+  },
+  "newDocument": {
+    "title": "Neues Dokument",
+    "subtitle": "JSON einfügen oder URL eingeben",
+    "inputLabel": "JSON oder URL einfügen",
+    "placeholder": "Fügen Sie hier Ihr JSON ein oder geben Sie eine URL ein…",
+    "opening": "Öffnen…",
+    "openJson": "JSON öffnen →",
+    "or": "oder",
+    "trySample": "Beispiel ausprobieren",
+    "keyboardHint": "Drücken Sie <1>Ctrl+Enter</1> zum Absenden"
+  },
+  "dragDrop": {
+    "dropToOpen": "Zum Öffnen ablegen…",
+    "clickToSelect": "JSON-Datei hier ablegen oder zum Auswählen klicken"
+  },
+  "urlForm": {
+    "placeholder": "JSON-URL eingeben oder JSON hier einfügen…",
+    "go": "Los"
+  },
+  "sampleUrls": {
+    "tweetJson": "Tweet JSON",
+    "githubApi": "Github API",
+    "airtableApi": "Airtable API",
+    "unsplashApi": "Unsplash API"
+  },
+  "noJson": {
+    "tryItOut": "Kein JSON? Probieren Sie:"
+  },
+  "search": {
+    "searchButton": "Suchen…",
+    "placeholder": "JSON durchsuchen…",
+    "loading": "Laden…",
+    "oneResult": "1 Ergebnis",
+    "nResults": "{{count}} Ergebnisse",
+    "noResults": "Keine Ergebnisse für \"{{query}}\"",
+    "toSelect": "zum Auswählen",
+    "toNavigate": "zum Navigieren",
+    "toClose": "zum Schließen"
+  },
+  "infoHeader": {
+    "nothingSelected": "Nichts ausgewählt",
+    "null": "null",
+    "canBeNull": "Kann null sein"
+  },
+  "share": {
+    "copy": "Kopieren",
+    "copied": "Kopiert!",
+    "failedToCopy": "Kopieren fehlgeschlagen",
+    "description": "Jeder mit diesem Link kann diese JSON-Datei anzeigen.",
+    "includePath": "Link enthält Pfad"
+  },
+  "codeView": {
+    "openInTab": "In Tab öffnen"
+  },
+  "preview": {
+    "preview": "Vorschau",
+    "loading": "Laden…",
+    "audioNotSupported": "Ihr Browser unterstützt kein eingebettetes Audio.",
+    "videoNotSupported": "Ihr Browser unterstützt keine eingebetteten Videos."
+  },
+  "properties": {
+    "properties": "Eigenschaften",
+    "formattedValue": "Formatierter Wert",
+    "type": "Typ"
+  },
+  "containerInfo": {
+    "json": "JSON",
+    "schema": "Schema"
+  },
+  "relatedValues": {
+    "title": "Verknüpfte Werte"
+  },
+  "documentTitle": {
+    "placeholder": "JSON-Datei benennen",
+    "save": "Speichern",
+    "reset": "Zurücksetzen"
+  },
+  "pathBar": {
+    "placeholder": "JSON-Datei benennen"
+  },
+  "copyText": {
+    "copy": "Kopieren",
+    "copied": "Kopiert!"
+  },
+  "indentPreference": {
+    "indent": "Einzug"
+  },
+  "githubStar": {
+    "star": "Star"
+  },
+  "mobileWarning": {
+    "title": "JSON Hero funktioniert nur auf dem Desktop",
+    "subtitle": "(Vorläufig!)",
+    "backToHome": "Zurück zur Startseite"
+  },
+  "errorPage": {
+    "sorry": "<1>Entschuldigung</1>! Ein Fehler ist aufgetreten…",
+    "notFound": "Seite <1>'https://jsonhero.io/j/{{id}}'</1> nicht gefunden",
+    "unknownError": "Unbekannter Fehler.",
+    "home": "STARTSEITE"
+  },
+  "sampleDoc": {
+    "title": "Beispiel API-Antwort"
+  },
+  "emptyState": {
+    "noDocument": "Kein Dokument geöffnet",
+    "openFile": "Öffnen Sie eine JSON-Datei, um zu beginnen",
+    "shortcutHint": "Drücken Sie Ctrl+N, um ein neues Dokument zu erstellen"
+  },
+  "infoPanelPlaceholder": {
+    "text": "Öffnen Sie ein Dokument, um Vorschauen, Schema und verknüpfte Werte anzuzeigen"
+  }
+}

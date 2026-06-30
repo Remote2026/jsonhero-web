@@ -1,0 +1,71 @@
+<h2>方案 C — 右侧预览区设计</h2>
+<p class="subtitle">Part 3/5: 右侧预览区域细节</p>
+
+<div class="section">
+  <h3>预览区布局</h3>
+  <div class="mockup" style="max-width:550px; margin:0 auto;">
+    <div class="mockup-header" style="background:#1a1a2e;color:rgba(255,255,255,0.8);">Live Preview — a sample JSON document</div>
+    <div class="mockup-body" style="padding:1.5rem;background:#1a1a2e;font-family:'JetBrains Mono',monospace;font-size:0.8rem;line-height:1.8;color:rgba(255,255,255,0.9);min-height:320px;">
+      <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:1rem;padding-bottom:0.8rem;border-bottom:1px solid rgba(255,255,255,0.1);">
+        <div style="display:flex;gap:0.3rem;">
+          <div style="width:10px;height:10px;border-radius:50%;background:#ef4444;"></div>
+          <div style="width:10px;height:10px;border-radius:50%;background:#eab308;"></div>
+          <div style="width:10px;height:10px;border-radius:50%;background:#22c55e;"></div>
+        </div>
+        <div style="font-size:0.7rem;color:rgba(255,255,255,0.4);margin-left:0.5rem;">preview.json</div>
+      </div>
+
+      <div><span style="color:rgba(255,255,255,0.3);">1</span>  <span style="color:#a78bfa;">{</span></div>
+      <div><span style="color:rgba(255,255,255,0.3);">2</span>    <span style="color:#a78bfa;">"name"</span>: <span style="color:#f59e0b;">"JSON Hero"</span>,</div>
+      <div><span style="color:rgba(255,255,255,0.3);">3</span>    <span style="color:#a78bfa;">"description"</span>: <span style="color:#f59e0b;">"A beautiful JSON viewer"</span>,</div>
+      <div><span style="color:rgba(255,255,255,0.3);">4</span>    <span style="color:#a78bfa;">"stars"</span>: <span style="color:#10b981;">18500</span>,</div>
+      <div><span style="color:rgba(255,255,255,0.3);">5</span>    <span style="color:#a78bfa;">"features"</span>: [</div>
+      <div><span style="color:rgba(255,255,255,0.3);">6</span>      <span style="color:#f59e0b;">"Column View"</span>,</div>
+      <div><span style="color:rgba(255,255,255,0.3);">7</span>      <span style="color:#f59e0b;">"Tree View"</span>,</div>
+      <div><span style="color:rgba(255,255,255,0.3);">8</span>      <span style="color:#f59e0b;">"Editor"</span>,</div>
+      <div><span style="color:rgba(255,255,255,0.3);">9</span>      <span style="color:#f59e0b;">"Search"</span></div>
+      <div><span style="color:rgba(255,255,255,0.3);">10</span>    ],</div>
+      <div><span style="color:rgba(255,255,255,0.3);">11</span>    <span style="color:#a78bfa;">"created"</span>: <span style="color:#f59e0b;">"2024-01-15"</span></div>
+      <div><span style="color:rgba(255,255,255,0.3);">12</span>  <span style="color:#a78bfa;">}</span></div>
+
+      <div style="margin-top:1rem;padding-top:0.8rem;border-top:1px solid rgba(255,255,255,0.1);display:flex;gap:1rem;">
+        <div style="background:rgba(255,255,255,0.08);border-radius:6px;padding:0.6rem 1rem;flex:1;text-align:center;">
+          <div style="font-size:0.7rem;color:rgba(255,255,255,0.4);text-transform:uppercase;">Values</div>
+          <div style="font-size:1rem;font-weight:600;color:#22c55e;">18</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.08);border-radius:6px;padding:0.6rem 1rem;flex:1;text-align:center;">
+          <div style="font-size:0.7rem;color:rgba(255,255,255,0.4);text-transform:uppercase;">Keys</div>
+          <div style="font-size:1rem;font-weight:600;color:#a78bfa;">6</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.08);border-radius:6px;padding:0.6rem 1rem;flex:1;text-align:center;">
+          <div style="font-size:0.7rem;color:rgba(255,255,255,0.4);text-transform:uppercase;">Depth</div>
+          <div style="font-size:1rem;font-weight:600;color:#f59e0b;">3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>设计要点</h3>
+  <ul style="font-size:0.9rem;line-height:1.8;">
+    <li><strong>静态示例代码</strong> — 不是真实交互，而是一个好看的 JSON 代码展示，用等宽字体 + 语法高亮</li>
+    <li><strong>底部统计条</strong> — 展示 Values / Keys / Depth，暗示 JSON Hero 能自动分析 JSON 结构</li>
+    <li><strong>深色代码风格</strong> — 延续当前首页的深色主题，代码编辑器风格（红绿灯按钮 + 文件名）</li>
+    <li><strong>纯 CSS/HTML 模拟</strong> — 无需额外组件，直接模板渲染</li>
+  </ul>
+</div>
+
+<div class="section" style="padding-top:0.5rem;border-top:1px solid #e0e0e0;text-align:center;">
+  <p class="subtitle">预览区设计 OK 吗？</p>
+  <div class="options">
+    <div class="option" data-choice="yes" onclick="toggleSelect(this)">
+      <div class="letter">✓</div>
+      <div class="content"><h3>可以</h3><p>继续下一部分</p></div>
+    </div>
+    <div class="option" data-choice="adjust" onclick="toggleSelect(this)">
+      <div class="letter">~</div>
+      <div class="content"><h3>需要调整</h3><p>有些细节要改</p></div>
+    </div>
+  </div>
+</div>

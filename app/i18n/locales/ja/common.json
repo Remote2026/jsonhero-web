@@ -1,0 +1,134 @@
+{
+  "header": {
+    "by": "by",
+    "new": "新規",
+    "delete": "削除",
+    "deleteConfirm": "このドキュメントは完全に削除されます。続行してもよろしいですか？",
+    "share": "共有",
+    "saved": "保存済み"
+  },
+  "footer": {
+    "navigate": "移動",
+    "history": "履歴",
+    "resetPath": "パスをリセット",
+    "copySelectedNode": "選択したノードをコピー"
+  },
+  "sidebar": {
+    "columnView": "カラム表示",
+    "jsonView": "JSON 表示",
+    "treeView": "ツリー表示",
+    "download": "ダウンロード"
+  },
+  "newDocument": {
+    "title": "新規ドキュメント",
+    "subtitle": "JSON を貼り付けるか URL を入力",
+    "inputLabel": "JSON または URL を貼り付け",
+    "placeholder": "ここに JSON を貼り付けるか、URL を入力…",
+    "opening": "開いています…",
+    "openJson": "JSON を開く →",
+    "or": "または",
+    "trySample": "サンプルを試す",
+    "keyboardHint": "<1>Ctrl+Enter</1> で送信"
+  },
+  "dragDrop": {
+    "dropToOpen": "ドロップして開く…",
+    "clickToSelect": "JSON ファイルをここにドロップするか、クリックして選択"
+  },
+  "urlForm": {
+    "placeholder": "JSON URL を入力するか、ここに JSON を貼り付け…",
+    "go": "開く"
+  },
+  "sampleUrls": {
+    "tweetJson": "ツイート JSON",
+    "githubApi": "Github API",
+    "airtableApi": "Airtable API",
+    "unsplashApi": "Unsplash API"
+  },
+  "noJson": {
+    "tryItOut": "JSON がありませんか？お試しサンプル："
+  },
+  "search": {
+    "searchButton": "検索…",
+    "placeholder": "JSON を検索…",
+    "loading": "読み込み中…",
+    "oneResult": "1 件の結果",
+    "nResults": "{{count}} 件の結果",
+    "noResults": "\"{{query}}\" に一致する結果はありません",
+    "toSelect": "選択",
+    "toNavigate": "移動",
+    "toClose": "閉じる"
+  },
+  "infoHeader": {
+    "nothingSelected": "選択されていません",
+    "null": "null",
+    "canBeNull": "null の可能性があります"
+  },
+  "share": {
+    "copy": "コピー",
+    "copied": "コピーしました！",
+    "failedToCopy": "コピーに失敗しました",
+    "description": "このリンクを持つ人は誰でもこの JSON ファイルを表示できます。",
+    "includePath": "リンクにパスを含める"
+  },
+  "codeView": {
+    "openInTab": "タブで開く"
+  },
+  "preview": {
+    "preview": "プレビュー",
+    "loading": "読み込み中…",
+    "audioNotSupported": "お使いのブラウザは埋め込みオーディオをサポートしていません。",
+    "videoNotSupported": "お使いのブラウザは埋め込みビデオをサポートしていません。"
+  },
+  "properties": {
+    "properties": "プロパティ",
+    "formattedValue": "フォーマットされた値",
+    "type": "タイプ"
+  },
+  "containerInfo": {
+    "json": "JSON",
+    "schema": "スキーマ"
+  },
+  "relatedValues": {
+    "title": "関連値"
+  },
+  "documentTitle": {
+    "placeholder": "JSON ファイルに名前を付ける",
+    "save": "保存",
+    "reset": "リセット"
+  },
+  "pathBar": {
+    "placeholder": "JSON ファイルに名前を付ける"
+  },
+  "copyText": {
+    "copy": "コピー",
+    "copied": "コピーしました！"
+  },
+  "indentPreference": {
+    "indent": "インデント"
+  },
+  "githubStar": {
+    "star": "スター"
+  },
+  "mobileWarning": {
+    "title": "JSON Hero はデスクトップのみ対応",
+    "subtitle": "（現在のところ）",
+    "backToHome": "ホームに戻る"
+  },
+  "errorPage": {
+    "sorry": "<1>申し訳ございません</1>！エラーが発生しました…",
+    "notFound": "ページ <1>'https://jsonhero.io/j/{{id}}'</1> が見つかりませんでした",
+    "unknownError": "不明なエラーが発生しました。",
+    "home": "ホーム"
+  },
+  "sampleDoc": {
+    "title": "サンプル API レスポンス"
+  },
+  "emptyState": {
+    "noDocument": "ドキュメントが開かれていません",
+    "openFile": "JSON ファイルを開いて開始",
+    "shortcutHint": "Ctrl+N で新規ドキュメントを作成"
+  },
+  "infoPanelPlaceholder": {
+    "text": "ドキュメントを開くと、プレビュー、スキーマ、関連値が表示されます"
+  }
+}

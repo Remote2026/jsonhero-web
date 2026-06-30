@@ -1,0 +1,111 @@
+<h2>🎯 新方案：首页 = JSON Hero 查看器</h2>
+<p class="subtitle">用户打开 jsonhero.io 直接进入 app，输入区嵌入 JsonView 区域</p>
+
+<div class="section">
+  <h3>当首页就是查看器...</h3>
+  <div class="mockup" style="max-width:900px;margin:0 auto;">
+    <div class="mockup-header">jsonhero.io — 首页即 app</div>
+    <div class="mockup-body" style="padding:0;display:flex;min-height:400px;">
+      <!-- SideBar -->
+      <div style="width:220px;background:#f8fafc;border-right:1px solid #e2e8f0;padding:1rem;font-size:0.8rem;">
+        <div style="font-weight:600;color:#2c3e8f;margin-bottom:1rem;">✦ JSON Hero</div>
+        <div style="font-size:0.7rem;color:#64748b;font-weight:600;margin-bottom:0.3rem;">DOCUMENT</div>
+        <div style="background:#ffffff;border-radius:6px;padding:0.5rem;margin-bottom:1rem;border:1px solid #e2e8f0;">
+          <div style="font-size:0.75rem;color:#334155;">📄 <span style="color:#94a3b8;">No file loaded</span></div>
+          <div style="font-size:0.7rem;color:#94a3b8;margin-top:0.3rem;">Paste JSON to begin</div>
+        </div>
+        <div style="font-size:0.7rem;color:#64748b;font-weight:600;margin-bottom:0.3rem;">VIEWS</div>
+        <div style="color:#94a3b8;font-size:0.75rem;line-height:1.8;">
+          <div>✦ Column</div>
+          <div>🌲 Tree</div>
+          <div>✏️ Editor</div>
+        </div>
+        <div style="margin-top:1rem;font-size:0.7rem;color:#64748b;font-weight:600;margin-bottom:0.3rem;">EXAMPLES</div>
+        <div style="font-size:0.7rem;color:#2c3e8f;text-decoration:underline;line-height:1.8;">
+          <div>📦 Tweet JSON</div>
+          <div>🐙 Github API</div>
+          <div>📊 Airtable API</div>
+        </div>
+      </div>
+
+      <!-- Center: Input Area (replaces JsonView) -->
+      <div style="flex:1;padding:2rem;display:flex;flex-direction:column;justify-content:center;align-items:center;">
+        <div style="max-width:520px;width:100%;">
+          <div style="font-size:1.1rem;font-weight:700;margin-bottom:0.3rem;text-align:center;">
+            Your JSON, <span style="color:#2c3e8f;">beautifully visualized</span>
+          </div>
+          <div style="font-size:0.85rem;color:#94a3b8;margin-bottom:1.2rem;text-align:center;">
+            Paste JSON, drop a file, or enter a URL
+          </div>
+
+          <textarea placeholder='Paste your JSON here, or type a URL...'
+            style="width:100%;min-height:120px;padding:0.8rem;font-family:'JetBrains Mono',monospace;font-size:0.85rem;
+                   border:2px solid #2c3e8f;border-radius:8px;resize:vertical;background:#ffffff;outline:none;
+                   box-shadow:0 0 0 3px rgba(44,62,143,0.1);">
+          </textarea>
+
+          <div style="margin-top:0.8rem;display:flex;gap:0.8rem;">
+            <button style="flex:1;padding:0.7rem;background:#2c3e8f;color:white;border:none;border-radius:8px;font-size:0.9rem;font-weight:600;cursor:pointer;">
+              View JSON →
+            </button>
+          </div>
+
+          <div style="margin-top:0.8rem;">
+            <div class="placeholder" style="padding:0.8rem;text-align:center;border:2px dashed #cbd5e1;border-radius:8px;cursor:pointer;">
+              <span style="font-size:0.8rem;color:#64748b;">📁 Drop a .json file here, or click to browse</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- InfoPanel -->
+      <div style="width:220px;background:#f8fafc;border-left:1px solid #e2e8f0;padding:1rem;font-size:0.8rem;">
+        <div style="font-size:0.7rem;color:#64748b;font-weight:600;margin-bottom:0.5rem;">PREVIEW</div>
+        <div style="background:#ffffff;border-radius:6px;padding:0.8rem;border:1px solid #e2e8f0;text-align:center;">
+          <div style="font-size:2rem;margin-bottom:0.5rem;">🔍</div>
+          <div style="font-size:0.75rem;color:#94a3b8;">Paste some JSON to<br>see previews, schema,<br>and related values</div>
+        </div>
+        <div style="font-size:0.7rem;color:#64748b;font-weight:600;margin-top:1rem;margin-bottom:0.5rem;">STATS</div>
+        <div style="color:#94a3b8;font-size:0.75rem;">
+          <div>Values: <span style="color:#334155;">—</span></div>
+          <div>Keys: <span style="color:#334155;">—</span></div>
+          <div>Depth: <span style="color:#334155;">—</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>交互流程</h3>
+  <table style="width:100%;font-size:0.85rem;border-collapse:collapse;">
+    <tr><td style="padding:0.5rem;border-bottom:1px solid #eee;font-weight:600;">进入首页</td><td style="padding:0.5rem;border-bottom:1px solid #eee;">直接看到三栏布局，中间是输入区，左右栏显示空状态提示</td></tr>
+    <tr><td style="padding:0.5rem;border-bottom:1px solid #eee;font-weight:600;">粘贴或拖入 JSON</td><td style="padding:0.5rem;border-bottom:1px solid #eee;">无需跳转页面，中间输入区直接变成 JSON 列视图</td></tr>
+    <tr><td style="padding:0.5rem;border-bottom:1px solid #eee;font-weight:600;">点击示例</td><td style="padding:0.5rem;border-bottom:1px solid #eee;">加载示例 JSON，同样在当前页面渲染查看器</td></tr>
+    <tr><td style="padding:0.5rem;font-weight:600;">分享链接</td><td style="padding:0.5rem;">提交后生成 `/j/$id` 链接，用户可分享</td></tr>
+  </table>
+</div>
+
+<div class="section">
+  <h3>修改思路</h3>
+  <ul style="font-size:0.9rem;line-height:1.8;">
+    <li><strong>index.tsx 不再走营销首页</strong> — 而是复用 <code>/j/$id</code> 的三栏布局，但初始状态不加载 JSON</li>
+    <li><strong>输入区作为 JsonView 的"空状态"</strong> — 类似 <code>:empty</code> 或 loading state</li>
+    <li><strong>不跳转页面</strong> — 粘贴/拖入后同一页面内从输入态切换到查看态，用 <code>replaceState</code> 更新 URL</li>
+    <li><strong>header 简化</strong> — 不需要 "Try now" 按钮了，因为已经在用了</li>
+  </ul>
+</div>
+
+<div class="section" style="text-align:center;padding-top:0.5rem;border-top:1px solid #e0e0e0;">
+  <p class="subtitle">这个方向对吗？</p>
+  <div class="options">
+    <div class="option" data-choice="yes" onclick="toggleSelect(this)">
+      <div class="letter">✓</div>
+      <div class="content"><h3>就是这个方向</h3><p>首页直接是查看器 + 输入区</p></div>
+    </div>
+    <div class="option" data-choice="adjust" onclick="toggleSelect(this)">
+      <div class="letter">~</div>
+      <div class="content"><h3>有调整</h3><p>基本方向对但要改细节</p></div>
+    </div>
+  </div>
+</div>

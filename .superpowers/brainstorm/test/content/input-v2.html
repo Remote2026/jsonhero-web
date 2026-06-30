@@ -1,0 +1,62 @@
+<h2>输入区 — textarea vs input</h2>
+<p class="subtitle">Part 2.5: 用 textarea 还是 input？</p>
+
+<div class="section">
+  <div class="split">
+    <div class="mockup" style="max-width:400px;">
+      <div class="mockup-header">方案 A: Single-line input</div>
+      <div class="mockup-body" style="padding:1.5rem;">
+        <div style="margin-bottom:0.8rem;">
+          <div style="font-size:0.7rem;font-weight:600;color:#555;margin-bottom:0.3rem;">PASTE JSON OR URL</div>
+          <input class="mock-input" placeholder="Paste JSON or enter a URL..." style="width:100%;padding:0.75rem;font-size:0.9rem;">
+        </div>
+        <button class="mock-button" style="width:100%;padding:0.75rem;">View →</button>
+      </div>
+      <div class="pros-cons" style="margin:0;font-size:0.8rem;">
+        <div class="cons" style="padding:0.8rem;"><h4>问题</h4><ul><li>大段 JSON 看不见</li><li>需要滚动才能看完内容</li><li>用户不确定"贴进去了吗"</li></ul></div>
+      </div>
+    </div>
+    <div class="mockup" style="max-width:400px;">
+      <div class="mockup-header" style="background:#2c3e8f;color:white;">✅ 方案 B: Multi-line textarea</div>
+      <div class="mockup-body" style="padding:1.5rem;">
+        <div style="margin-bottom:0.8rem;">
+          <div style="font-size:0.7rem;font-weight:600;color:#555;margin-bottom:0.3rem;">PASTE JSON OR URL</div>
+          <textarea class="mock-input" placeholder='{"Paste": "your JSON here..."}' style="width:100%;padding:0.75rem;font-size:0.9rem;min-height:100px;resize:vertical;font-family:monospace;border:1px solid #2c3e8f;"></textarea>
+        </div>
+        <button class="mock-button" style="width:100%;padding:0.75rem;background:#2c3e8f;">View →</button>
+      </div>
+      <div class="pros-cons" style="margin:0;font-size:0.8rem;">
+        <div class="pros" style="padding:0.8rem;"><h4>优势</h4><ul><li>大段 JSON 可见</li><li>输入 URL 也完全 OK</li><li>粘贴后用户能看到内容，有确认感</li><li>等宽字体，JSON 结构一目了然</li></ul></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>交互建议</h3>
+  <ul style="font-size:0.9rem;line-height:1.8;">
+    <li><strong>默认 4 行高度</strong>（~100px），足够展示中小型 JSON</li>
+    <li><strong>可拖拽调整高度</strong>（resize: vertical），满足大型 JSON</li>
+    <li><strong>等宽字体</strong>（JetBrains Mono），让 JSON 结构对齐可见</li>
+    <li><strong>提交按钮</strong>始终在下方固定，不随 textarea 高度变化位移</li>
+    <li>URL 输入作为次要入口：在 textarea 下方加一行"<span style="color:#2c3e8f;">或输入 URL 链接</span>"的小链接？还是合并？</li>
+  </ul>
+</div>
+
+<div class="section" style="text-align:center;padding-top:0.5rem;border-top:1px solid #e0e0e0;">
+  <p class="subtitle">关于 URL 输入的交互方式，你怎么看？</p>
+  <div class="options">
+    <div class="option" data-choice="merge" onclick="toggleSelect(this)">
+      <div class="letter">1</div>
+      <div class="content"><h3>合并到 textarea</h3><p>输入 URL 也贴在 textarea 里，自动识别</p></div>
+    </div>
+    <div class="option" data-choice="split" onclick="toggleSelect(this)">
+      <div class="letter">2</div>
+      <div class="content"><h3>分离 URL 输入</h3><p>textarea 下方加一个小的 URL 输入行 + 按钮</p></div>
+    </div>
+    <div class="option" data-choice="toggle" onclick="toggleSelect(this)">
+      <div class="letter">3</div>
+      <div class="content"><h3>Tab 切换</h3><p>两个 Tab："Paste JSON" / "URL"，切换显示 textarea 或 input</p></div>
+    </div>
+  </div>
+</div>

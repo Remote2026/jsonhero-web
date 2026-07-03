@@ -1,12 +1,17 @@
-# Builder
-FROM node:16.17.0 as builder
-WORKDIR /src
-COPY . /src
+FROM node:20-alpine
 
-# App
-RUN cd /src
-RUN npm install
-RUN echo "SESSION_SECRET=abc123" > .env
+WORKDIR /app
+
+# Install dependencies (production)
+COPY package*.json ./
+COPY patch-web-fetch.js ./
+RUN npm ci --only=production
+
+# Copy source
+COPY . .
+
+# Build assets
 RUN npm run build
 
-CMD npm start
+EXPOSE 3000
+CMD ["node", "server.js"]

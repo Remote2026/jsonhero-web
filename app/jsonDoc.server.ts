@@ -2,6 +2,7 @@ import { customRandom } from "nanoid";
 import safeFetch from "./utilities/safeFetch";
 import createFromRawXml from "./utilities/xml/createFromRawXml";
 import isXML from "./utilities/xml/isXML";
+import { KV } from "./kv-store.server";
 
 type BaseJsonDocument = {
   id: string;
@@ -72,9 +73,8 @@ export async function createFromUrl(
     readOnly: options?.readOnly ?? false,
   };
 
-  await DOCUMENTS.put(docId, JSON.stringify(doc), {
+  await KV.put(docId, JSON.stringify(doc), {
     expirationTtl: options?.ttl ?? undefined,
-    metadata: options?.metadata ?? undefined,
   });
 
   return doc;
@@ -95,9 +95,8 @@ export async function createFromRawJson(
   };
 
   JSON.parse(contents);
-  await DOCUMENTS.put(docId, JSON.stringify(doc), {
+  await KV.put(docId, JSON.stringify(doc), {
     expirationTtl: options?.ttl ?? undefined,
-    metadata: options?.metadata ?? undefined,
   });
 
   return doc;
@@ -106,7 +105,7 @@ export async function createFromRawJson(
 export async function getDocument(
   slug: string
 ): Promise<JSONDocument | undefined> {
-  const doc = await DOCUMENTS.get(slug);
+  const doc = await KV.get(slug);
 
   if (!doc) return;
 
@@ -123,13 +122,13 @@ export async function updateDocument(
 
   const updated = { ...document, title };
 
-  await DOCUMENTS.put(slug, JSON.stringify(updated));
+  await KV.put(slug, JSON.stringify(updated));
 
   return updated;
 }
 
 export async function deleteDocument(slug: string): Promise<void> {
-  await DOCUMENTS.delete(slug);
+  await KV.delete(slug);
 }
 
 function createId(): string {

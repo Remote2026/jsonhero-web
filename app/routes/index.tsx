@@ -37,6 +37,14 @@ export default function Index() {
     <div className="h-screen flex flex-col sm:overflow-hidden">
       <Header onNewDocument={() => setIsPanelOpen(true)} />
 
+      {/* Sample doc notice */}
+      <div className="flex items-center justify-center gap-2 py-1.5 px-4 bg-slate-100 border-b border-slate-300 dark:bg-slate-800 dark:border-slate-700">
+        <span className="text-xs text-color-white
+         tracking-wide text-slate-500 dark:text-slate-400">
+          {t("sampleDoc.notice")}
+        </span>
+      </div>
+
       <JsonDocProvider doc={sampleDoc} key={sampleDoc.id}>
         <JsonProvider initialJson={sampleJson}>
           <JsonSchemaProvider>

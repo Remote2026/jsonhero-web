@@ -129,6 +129,7 @@ export const resources = {
       },
       sampleDoc: {
         title: "Sample API Response",
+        notice: "This is an example — paste your own JSON or open a file to explore",
       },
       emptyState: {
         noDocument: "No document open",
@@ -265,6 +266,7 @@ export const resources = {
       },
       sampleDoc: {
         title: "示例 API 响应",
+        notice: "这是一个示例 — 粘贴你自己的 JSON 或打开文件来体验",
       },
       emptyState: {
         noDocument: "未打开文档",
@@ -407,6 +409,7 @@ export const resources = {
       },
       sampleDoc: {
         title: "サンプル API レスポンス",
+        notice: "これはサンプルです — 自分の JSON を貼り付けるか、ファイルを開いてお試しください",
       },
       emptyState: {
         noDocument: "ドキュメントが開かれていません",
@@ -550,6 +553,7 @@ export const resources = {
       },
       sampleDoc: {
         title: "Exemple de réponse API",
+        notice: "Ceci est un exemple — collez votre propre JSON ou ouvrez un fichier pour essayer",
       },
       emptyState: {
         noDocument: "Aucun document ouvert",
@@ -696,6 +700,7 @@ export const resources = {
       },
       sampleDoc: {
         title: "Beispiel API-Antwort",
+        notice: "Dies ist ein Beispiel — fügen Sie Ihr eigenes JSON ein oder öffnen Sie eine Datei",
       },
       emptyState: {
         noDocument: "Kein Dokument geöffnet",
@@ -840,6 +845,7 @@ export const resources = {
       },
       sampleDoc: {
         title: "Ejemplo de respuesta API",
+        notice: "Este es un ejemplo — pegue su propio JSON o abra un archivo para explorar",
       },
       emptyState: {
         noDocument: "Ningún documento abierto",
@@ -977,6 +983,7 @@ export const resources = {
       },
       sampleDoc: {
         title: "샘플 API 응답",
+        notice: "예시입니다 — 직접 JSON을 붙여넣거나 파일을 열어서 사용해보세요",
       },
       emptyState: {
         noDocument: "열린 문서 없음",
@@ -1113,6 +1120,7 @@ export const resources = {
       },
       sampleDoc: {
         title: "Contoh Respons API",
+        notice: "Ini adalah contoh — tempelkan JSON Anda sendiri atau buka file untuk mencoba",
       },
       emptyState: {
         noDocument: "Tidak ada dokumen terbuka",
@@ -1249,6 +1257,7 @@ export const resources = {
       },
       sampleDoc: {
         title: "Exemplo de Resposta de API",
+        notice: "Este é um exemplo — cole seu próprio JSON ou abra um arquivo para explorar",
       },
       emptyState: {
         noDocument: "Nenhum documento aberto",
